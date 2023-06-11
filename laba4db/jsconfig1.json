@@ -1,11 +1,11 @@
 {
     "C:\\Users\\Dell\\Desktop\\NewFile1.txt": {
         "Name": "String",
-        "Age": "Int"
+        "Age": "Int32"
     },
     "C:\\Users\\Dell\\Desktop\\NewFile2.txt": {
-        "F": "Int",
-        "x": "Float",
-        "y": "Float"
+        "F": "Int32",
+        "x": "Single",
+        "y": "Single"
     }
 }

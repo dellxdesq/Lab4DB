@@ -6,21 +6,7 @@ public class Column
     public ColumnType Type { get; set; }
     public List<object> Data { get; set; }
     public Tuple<int, int> Shape => Tuple.Create(Data.Count, 0);
-    public int MaxWidth
-    {
-        get
-        {
-            int max = 0;
-
-            foreach (var element in Data)
-            {
-                var len = element.ToString().Length;
-                max = Math.Max(len, max);
-            }
-
-            return max;
-        }
-    }
+    public int MaxWidth => Data.Max(element => element.ToString().Length);
 
     public Column(String name, ColumnType type, List<object> data)
     {
