@@ -2,7 +2,7 @@
 
 public enum ColumnType
 {
-    Int,
-    Float,
+    Int32,
+    Single,
     String
 }
